@@ -1,7 +1,7 @@
 # Serialização para retorno de produtos
 def serialize_product(product):
     return {
-        "id": str(product.get("_id")),
+        "id": str(product.get("id")),
         "name": product.get("name"),
         "description": product.get("description"),
         "category": product.get("category"),
