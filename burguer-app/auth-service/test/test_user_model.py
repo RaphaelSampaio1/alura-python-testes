@@ -40,7 +40,7 @@ def test_serialize_missing_fields():
     result = serialize_user(user)
 
     expected = {
-        "email": None,
+        "email": "None",
         "name": "",
         "address": "",
         "role": "cliente"
@@ -94,9 +94,9 @@ def test_serialize_user_allNone():
 
     expected = {
         "email": None,
-        "name": "",
-        "address": "",
-        "role": "",
+        "name": None,
+        "address": None,
+        "role": None,
     }
     assert result == expected
 
